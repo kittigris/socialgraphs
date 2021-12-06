@@ -69,7 +69,7 @@
     <section class="u-align-center u-clearfix u-palette-5-light-3 u-section-1" id="sec-877d">
       <div class="u-align-left u-clearfix u-sheet u-sheet-1">
         <h1 class="u-text u-text-default u-text-palette-4-dark-2 u-text-1">Introduction</h1>
-        <p class="u-text u-text-2"> This webpage is made to be the part of the final exam project for the course 02805, Social Graphs and Interactions 2021 Fall, at the Technical University of Denmark.&nbsp; Please see the menu above to navigate and see an overview of or analysis, to download our explainer notebook or the datasets we have worked with or to contact us for further questions.</p>
+        <p class="u-text u-text-2"> This webpage is a part of the final exam for the course 08205 Social Graphs and Interactions, Fall 2021 at the Technical University of Denmark. ​Please see the menu above to navigate and see an overview of our analysis, download our explainer notebook, view the datasets we worked on or to get in contact with us for further questions.</p>
         <h2 class="u-text u-text-palette-4-dark-2 u-text-3">Motivati​on</h2>
         <blockquote class="u-align-center u-text u-text-4">
           <span style="font-weight: 700;"> “I actually made this as a way to poke fun at the idea of getting cease and desist letters… I was just looking to troll a big studio”</span>
@@ -87,14 +87,14 @@
     <section class="u-clearfix u-section-2" id="sec-cd24">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h1 class="u-text u-text-default u-text-palette-4-dark-2 u-text-1">Network Statistics</h1>
-        <p class="u-text u-text-2"> In our analysis of the show, following the five main characters, Rick, Morty, Summer, Beth and Jerry, we first created a network of all the characters, adding links between characters if the they had referenced each other on their fandom wiki-page, which resulted in our graph having 757 nodes and 532 links. <br>Each of the nodes was created with several attributes: Status (alive/dead/unknown), specie (from above), gender (male/female), original universe the character came from (e.g. C-137) and last known location of the character. The network can be seen below, where the color of the node represents the status of the character in present time:&nbsp;<br>
+        <p class="u-text u-text-2"> In our analysis, we follow the five main characters ; Rick, Morty Summer Beth and Jerry. Firstly, we created a network of all the characters appearing in the show, adding links between them if they had referenced each other on their <a href="https://rickandmorty.fandom.com/wiki/Rickipedia" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" target="_blank">fandom wiki-page</a>. This resulted in our graph having 757 nodes and 532 links. <br>Each of the nodes was created with several attributes: Status (alive/dead/unknown), specie (from above), gender (male/female), original universe the character came from (e.g. C-137) and last known location of the character. The network can be seen below, where the color of the node represents the status of the character in present time:&nbsp;<br>
         </p>
         <img class="u-image u-image-default u-preserve-proportions u-image-1" src="images/pngbase64a9ff605d66d2c3dc.png" alt="" data-image-width="851" data-image-height="850">
         <h2 class="u-text u-text-palette-4-dark-2 u-text-3"> In- vs. out-degree</h2>
-        <p class="u-text u-text-4"> If we look at the top 5 characters with respect to our graphs in-degree, we have <br>
-          <br>-('Rick Sanchez', 90), <br>-('Morty Smith', 63), <br>-('Summer Smith', 31), <br>-('Jerry Smith', 28), <br>-('Beth Smith', 22)] <br>
-          <br>If we look at the top 5 (6) characters with respect to our graphs out-degree, we have <br>
-          <br>-('Summer Smith', 16), <br>-('Morty Smith', 15), <br>-('Jerry Smith', 13), <br>-('Beth Smith', 12), <br>-('Hemorrhage', 12) <br>-('Morty Jr.', 12)
+        <p class="u-text u-text-4"> If we look at the top 5 characters with respect to our graph's in-degree, we have <br>
+          <br>Rick Sanchez: 90&nbsp;<br>Morty Smith: 63<br>Summer Smith: 31<br>Jerry Smith: 28<br>Beth Smith: 22<br>
+          <br>If we look at the top 6 characters with respect to our graphs out-degree, we have <br>
+          <br>Summer Smith: 16&nbsp;<br>Morty Smith: 15&nbsp;<br>Jerry Smith:13<br>Beth Smith: 12<br>Hemorrhage: 12<br>Morty Jr.: 12
         </p>
         <p class="u-text u-text-5"> Rick being the character with the most in-degrees (90) makes sense, since Rick is (one of) the main character in Rick &amp; Morty (The name of the show). It’s interesting how Summer has the highest out-degree - maybe it’s because she is an extremely extroverted person (in the series) and thus have a lot of references.&nbsp;<br>
           <br>However, Hemorrhage being in the top 5 out-degrees is quite funny; Rick and co. visited Hemorrhage and his universe (post-apocalyptic), rebuilding Hemorrhage's world totally until one day, where Rick became bored (and Summer broke up with Hemorrhage) and therefore tore the universe apart from the revolution the universe just experienced. Hemorrhage must have been quite mad about that, thus extending his feelings to references.&nbsp;<br>
@@ -107,22 +107,22 @@
           <br>-Degree exponent for in-degrees: 2.718<br>-Degree exponent for out-degrees: 3.716<br>-Degree exponent for total degrees: 2.946<br>
           <br>Here, we find that the degree exponent of the out-degree distribution is above 3, which means that this distribution is not in the scale-free region and lies towards the Random Network Regime. However, looking into the degree exponent for in-degrees as well as the degree exponent for total degrees, we see that this lies between 2 and 3, which, according to Barabasi Section 4.7, is within the scale free region, and thus our Rick and Morty network degree distribution follows a power law, which we can also see from the following plots:
         </p>
-        <img class="u-image u-image-default u-image-2" src="images/pngbase64ccbdd3c15da65bbb.png" alt="" data-image-width="384" data-image-height="252">
+        <img class="u-image u-image-default u-preserve-proportions u-image-2" src="images/pngbase64ccbdd3c15da65bbb.png" alt="" data-image-width="384" data-image-height="252">
         <img class="u-image u-image-default u-image-3" src="images/pngbase6449024a825543e96b.png" alt="" data-image-width="380" data-image-height="252">
         <img class="u-image u-image-default u-image-4" src="images/pngbase64da341053d2f98307.png" alt="" data-image-width="380" data-image-height="252">
         <h2 class="u-text u-text-palette-4-dark-2 u-text-8"> Comparing our network to a random network</h2>
         <img class="u-image u-image-default u-preserve-proportions u-image-5" src="images/pngbase64d5a230581cf975ad.png" alt="" data-image-width="610" data-image-height="507">
-        <p class="u-text u-text-9"> Comparing the degree distribution of the undirected graph (from above) to a&nbsp;random network&nbsp;with the same number of nodes and probability of connection p, we can see that the random network’s degree distribution follows a bell-shaped curve, whereas our Rick &amp; Morty network is more the opposite.We also notice that the total degree exponent for the random network (39.3937) is much higher than our own network, which then further helps our case in concluding that our network is, in fact, scale free.</p>
-        <h2 class="u-text u-text-palette-4-dark-2 u-text-10"> Humans vs. non-humans</h2>
-        <p class="u-text u-text-11"> If we take a look at the in- vs. ou-degree of our graph with respect to humans vs. non-humans, we do find some interesting statistics: <br>
+        <p class="u-text u-text-9"> If we compare the degree distribution of the undirected version of our Rick &amp; Morty graph (having the same number of nodes and propability of connection), we notice a pattern: Whereas the random network’s degree distribution follows a bell-shaped curve, our Rick &amp; Morty degree distribution follows the opposite pattern. We also notice that the total degree exponent for the random network (37.39) is much higher than our own network, which then further help our case in concluding that our network is, in fact, scale free.</p>
+        <h2 class="u-text u-text-palette-4-dark-2 u-text-10"> Humans vs. Non-Humans</h2>
+        <p class="u-text u-text-11"> If we take a look at the in- vs. out-degree of our graph with respect to humans vs. non-humans, we do find some interesting statistics: <br>
           <br>
           <span style="font-weight: 700;">in-degree (humans)</span>
           <br>
-          <br>mean :  2.8360655737704916 <br>mode :  0 <br>min :  0 <br>max :  90&nbsp;<br>
+          <br>mean :  2.84&nbsp;<br>mode :  0 <br>min :  0 <br>max :  90&nbsp;<br>
           <br>
           <span style="font-weight: 700;">out-degree (humans) </span>
           <br>
-          <br>mean :  7.870967741935484 <br>mode :  4.0 <br>min :  1.0 <br>max :  28.0
+          <br>mean :  7.87&nbsp;<br>mode :  4.0 <br>min :  1.0 <br>max :  28.0
 &nbsp;<br>
           <br>This tells us that, in general, humans have more connections and non-humans (which, initially makes sense). The universe is around Rick and Morty’s adventures and the wiki-pages refer to a lot of humans, however we also see a lot of non-humans in there. <br>
           <br>Below you can find our network, however, this time, the nodes are colored with respect to their species:
@@ -130,13 +130,20 @@
         <p class="u-text u-text-12">
           <span style="font-weight: 700;">in-degree (non-humans) </span>
           <br>
-          <br>mean :  0.40217391304347827 <br>mode :  0 <br>min :  0 <br>max :  10&nbsp;<br>
+          <br>mean :  0.40<br>mode :  0 <br>min :  0 <br>max :  10&nbsp;<br>
           <br>
           <span style="font-weight: 700;">out-degree (non-humans) </span>
           <br>
-          <br>mean :  4.857142857142857 <br>mode :  1.0 <br>min :  1.0 <br>max :  26.0 <br>
+          <br>mean :  4.86<br>mode :  1.0 <br>min :  1.0 <br>max :  26.0 <br>
         </p>
         <img class="u-image u-image-default u-image-6" src="images/pngbase6473806033756ce6cd.png" alt="" data-image-width="851" data-image-height="850">
+        <p class="u-text u-text-13"> We have a total of 575 characters in the tv series, most of them are not too important for us, only 40 of them have more than 10 lines. <br>
+        </p>
+        <img class="u-image u-image-default u-preserve-proportions u-image-7" src="images/plots2.png" alt="" data-image-width="2007" data-image-height="562">
+        <p class="u-text u-text-14">We choose to focus our later, deeper analysis only on the main characters, the Smith family's members. They have themselves always more than 50% of the whole lines said in each episode, they are therefore the most interesting characters. <br>Below we can see the distribution of lines in every episode between our chosen characters and all the others. <br>
+        </p>
+        <p class="u-text u-text-palette-2-dark-1 u-text-15">*INTERACTIVE STACKED BAR PLOT* whenever I figure out how to extract it in html</p>
+        <img class="u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-preserve-proportions u-image-8" src="images/stacked.png" alt="" data-image-width="1049" data-image-height="696">
       </div>
     </section>
     <section class="u-clearfix u-palette-5-light-3 u-section-3" id="sec-e97f">
@@ -194,21 +201,22 @@
                             <iframe style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" class="embed-responsive-item" src="https://www.youtube.com/embed/Lu6ud7BOFMk?mute=1&amp;showinfo=1&amp;controls=1&amp;start=0" frameborder="0" allowfullscreen=""></iframe>
                           </div>
                         </div>
-                        <p class="u-text u-text-4">
-                          <br>In this video, you see Rick represented by a Ludo character. We follow Rick through all the episodes Rick appears in. When Rick meets a character, a green light will shine from Rick to a dot, the dot representing the character that Rick met in that episode. A new episode is represented by a new branch. (Episodes appear in chronological order.)
+                        <p class="u-text u-text-4"> In this video, you see Rick represented by a Ludo character. We follow Rick through all the episodes Rick appears in. When Rick meets a character, a green light will shine from Rick to a dot, the dot representing the character that Rick met in that episode. A new episode is represented by a new branch. (Episodes appear in chronological order.)</p>
+                        <p class="u-text u-text-5"> Rick is the main character of Rick &amp; Morty. Along his path of adventures throughout the episodes, he interacts with a lot of people, as you can see in the video above. We notice that in the episode “<a href="https://rickandmorty.fandom.com/wiki/Rixty_Minutes" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">Rixty Minutes</a>”, Rick encounters a lot of characters. This is due to the fact that we in this episode see the first iteration of interdimensional cable throughout the seasons of Rick &amp; Morty: Cable TV capable of receiving tv from every dimension! Another thing we notice is that Mr. Goldenfold (Morty’s high school teacher) and Rick have multiple encounters throughout the seasons, 14 actually, whereas Poopybutthole and Rick have 7 encounters. One thing that might seem weird is that of all the Smith’s, Rick has the most encounters with Wong (the Smiths’ therapist), even though Rick through many episodes make it clear that therapy is for dummies, especially in the episode <a href="https://rickandmorty.fandom.com/wiki/Pickle_Rick/Transcript" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-2">Pickle Rick</a>: <br>"Because I don't respect therapy, because I'm a scientist. Because I invent, transform, create, and destroy for a living, and when I don't like something about the world, I change it. And I don't think going to a rented office in a strip mall to listen to some agent of averageness explain which words mean which feelings has ever helped anyone do anything.”&nbsp;<br>
                         </p>
                       </div>
                     </div>
                     <div class="u-container-style u-tab-pane u-tab-pane-3" id="tab-3ac5" role="tabpanel" aria-labelledby="link-tab-3ac5">
-                      <div class="u-container-layout u-valign-top-lg u-valign-top-md u-valign-top-sm u-valign-top-xs u-container-layout-3">
+                      <div class="u-container-layout u-container-layout-3">
                         <div class="u-align-left u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-left-0 u-video u-video-contain u-video-2">
                           <div class="embed-responsive embed-responsive-2">
                             <iframe style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" class="embed-responsive-item" src="https://www.youtube.com/embed/FrBi0zGKJuQ?mute=1&amp;showinfo=1&amp;controls=1&amp;start=0" frameborder="0" allowfullscreen=""></iframe>
                           </div>
                         </div>
-                        <p class="u-text u-text-5">
-                          <br>In this video, you see Morty represented by a Ludo character. We follow Morty through all the episodes Morty appears in. When Morty meets a character, a green light will shine from Morty to a dot, the dot representing the character that Morty met in that episode. A new episode is represented by a new branch. (Episodes appear in chronological order)
+                        <p class="u-text u-text-6"> In this video, you see Morty represented by a Ludo character. We follow Morty through all the episodes Morty appears in. When Morty meets a character, a green light will shine from Morty to a dot, the dot representing the character that Morty met in that episode. A new episode is represented by a new branch. (Episodes appear in chronological order.)<br>
+                          <br>
                         </p>
+                        <p class="u-text u-text-7"> Morty, being Rick’s faithful companion in Rick and Morty, has a similar evolving graph through episodes as Rick. This is to be expected, as Rick and Morty go on a lot of adventures together. Morty also has many encounters with Mr. Goldenfold (Morty’s high school teacher). Morty has two encounters with Wong (the Smiths’ therapist), first being in the season 3, Pickle Rick, second being in season 4, Star Mort Rickturn of the Jerri. In the latter episode, while Rick and Morty are being hunted down by the Galactic federation, Rick instructs his ship to kill all of his enemies: "Smart guns, white-list human life. And the therapist.” Rick always has a funny say when it comes to therapists.</p>
                       </div>
                     </div>
                     <div class="u-container-style u-tab-pane u-tab-pane-4" id="tab-515c" role="tabpanel" aria-labelledby="link-tab-515c">
@@ -218,8 +226,8 @@
                             <iframe style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" class="embed-responsive-item" src="https://www.youtube.com/embed/XWI2i89axm4?mute=1&amp;showinfo=1&amp;controls=1&amp;start=0" frameborder="0" allowfullscreen=""></iframe>
                           </div>
                         </div>
-                        <p class="u-text u-text-6">
-                          <br>In this video, you see Summer represented by a Ludo character. We follow Summer through all the episodes Summer appears in. When Summer meets a character, a green light will shine from Summer to a dot, the dot representing the character that Summer met in that episode. A new episode is represented by a new branch. (Episodes appear in chronological order.)
+                        <p class="u-text u-text-8"> In this video, you see Summer represented by a Ludo character. We follow Summer through all the episodes Summer appears in. When Summer meets a character, a green light will shine from Summer to a dot, the dot representing the character that Summer met in that episode. A new episode is represented by a new branch. (Episodes appear in chronological order.)<br>
+                          <br>One thing we notice from Summer’s encounters is that at first, Summer does not have as many encounters as Rick and Morty, whilst later on throughout the seasons, Summer has more and more encounters - almost at the same level as Rick and Morty. This is due to the fact that the character of Summer has become more important (for the writers) throughout the episodes, thus Summer is getting more screen time than she got compared to when Rick and Morty just aired. <br>Quote: "Rick and Morty hit a high point when Summer was a queen in the post-apocalyptic wasteland of an early Season 3 episode, and the seventh episode in Season 4 hit a similar peak by making Summer the Supreme Empress of Glorzo”. <br>Even the fans like more of Summer, the writers realised this, and the fans got what they wanted.&nbsp;&nbsp;<br>
                         </p>
                       </div>
                     </div>
@@ -230,8 +238,8 @@
                             <iframe style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" class="embed-responsive-item" src="https://www.youtube.com/embed/6XHoGdJGLTM?mute=1&amp;showinfo=1&amp;controls=1&amp;start=0" frameborder="0" allowfullscreen=""></iframe>
                           </div>
                         </div>
-                        <p class="u-text u-text-7">
-                          <br>In this video, you see Beth represented by a Ludo character. We follow Beth through all the episodes Beth appears in. When Beth meets a character, a green light will shine from Beth to a dot, the dot representing the character that Beth met in that episode. A new episode is represented by a new branch. (Episodes appear in chronological order.)
+                        <p class="u-text u-text-9"> In this video, you see Beth represented by a Ludo character. We follow Beth through all the episodes Beth appears in. When Beth meets a character, a green light will shine from Beth to a dot, the dot representing the character that Beth met in that episode. A new episode is represented by a new branch. (Episodes appear in chronological order.)<br>
+                          <br>Beth, first seemingly being a character of less relevance of the cast proved to be a very important character. Beth has become more and more important throughout the episodes, as you can see in the video above. Beth being one of the five main characters makes her graph look quite similar to the others’, however, she got a full-on episode with (almost) only her and Rick in season 3 episode 9; The ABC’s of Beth.&nbsp;&nbsp;<br>
                         </p>
                       </div>
                     </div>
@@ -242,8 +250,8 @@
                             <iframe style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" class="embed-responsive-item" src="https://www.youtube.com/embed/BxHXh4DoGEY?mute=1&amp;showinfo=1&amp;controls=1&amp;start=0" frameborder="0" allowfullscreen=""></iframe>
                           </div>
                         </div>
-                        <p class="u-text u-text-8">
-                          <br>In this video, you see Jerry represented by a Ludo character. We follow Jerry through all the episodes Jerry appears in. When Jerry meets a character, a green light will shine from Jerry to a dot, the dot representing the character that Jerry met in that episode. A new episode is represented by a new branch. (Episodes appear in chronological order)
+                        <p class="u-text u-text-10"> In this video, you see Jerry represented by a Ludo character. We follow Jerry through all the episodes Jerry appears in. When Jerry meets a character, a green light will shine from Jerry to a dot, the dot representing the character that Jerry met in that episode. A new episode is represented by a new branch. (Episodes appear in chronological order.)<br>
+                          <br>Jerry, being the worriedness and the highlight of stupidity of the Smith family, has actually had a lot of encounters throughout the episodes. We notice that Jerry has a lot of encounters with Meeseeks (an artificial humanoid with the purpose of serving the one spawning it). This goes to show that Jerry is not very independent and very doubtful, which we also saw in Jerry’s word cloud. Jerry only has one encounter with the Smiths’ family therapist, Wong. Jerry, having a sock puppet to be able to speak for him when going to therapy, pretty much sums it up.<br>
                         </p>
                       </div>
                     </div>
@@ -253,118 +261,118 @@
             </div>
             <div class="u-container-style u-tab-pane u-tab-pane-7" id="tab-4d57" role="tabpanel" aria-labelledby="link-tab-4d57">
               <div class="u-container-layout u-container-layout-7">
-                <p class="u-text u-text-9">In this section we analyzed what are the most common words for each character. <br>
-                  <br>The analysis was conducted by taking the most used words, normalized by their distribution across the episodes. (TC-IDF approach, where every episode is treated as a&nbsp; document.) <br>This technique helped us to turn down&nbsp;words that are widely used in some episodes but not very common for the whole series.&nbsp;<br>
+                <p class="u-text u-text-11"> In this section, we analyzed what the most common words for each character were.<br>The analysis was conducted by taking the most used words, normalized by their distribution across the episodes. (TC-IDF approach, where every episode is treated as a&nbsp; document.) <br>This technique helped us to turn down&nbsp;words that are widely used in some episodes but not very common for the whole series.&nbsp;<br>
                 </p>
                 <img class="u-image u-image-default u-image-1" src="images/Rick1.png" alt="" data-image-width="675" data-image-height="398">
-                <p class="u-text u-text-10"> We can notice that we don’t have any particular highlighted word apart from “morty”. The reason for that is that Rick in the cartoon interacts a lot with almost everyone, changing his behavior and sentiment according to different situations and places. <br>Jerry is a paticular highlight, because Rick uses almost every occasion to insult Jerry in some form, and they interact a lot in the whole series - as you could see in the character interactions video.<br>
+                <p class="u-text u-text-12"> We notice that no other words than “morty” is particularly highlighted, reason being that Rick interacts with a lot of characters throughout episodes, changing his behaviour and sentiment according to places and situations.<br>Jerry is particularly highlighed, because Rick uses almost every occasion to insult Jerry in some form, ​and they interact a lot with each other in the whole series - as you could see in the character interactions video.<br>
                 </p>
                 <img class="u-image u-image-default u-image-2" src="images/morty.png" alt="" data-image-width="693" data-image-height="405">
-                <p class="u-text u-text-11"> The series is called “Rick and Morty” and Not “The Smith Family”, therefore it’s not surprising to see that here the biggest word is “rick” in Morty's wordcloud. Morty often calls his grandpa directly, asking him about everything.&nbsp;<br>Moreover, the first two characters seen here are almost always together, so we can see why their names have quite high relevance in the most used words of each other.<br>Secondly, we also have the impression, that Morty is quite an insecure and doubtful character, most of the top words are like : “oh”,”well”,”man”,”whoa”,”look”,”know”.&nbsp;<br>
+                <p class="u-text u-text-13"> The series is called “Rick and Morty” and not “The Smith Family”, therefore it’s not surprising to see that here the biggest word is “rick” in Morty's wordcloud. Morty often calls his grandpa directly, asking him about everything.&nbsp;<br>Moreover, the first two characters seen here are almost always together, so we can see why their names have quite high relevance in the most used words of each other.<br>Secondly, we also have the impression, that Morty is quite an insecure and doubtful character​, as most of the top words are: “oh”,”well”,”man”,”whoa”,”look”,”know”.&nbsp;<br>
                 </p>
                 <img class="u-image u-image-default u-image-3" src="images/Summer.png" alt="" data-image-width="677" data-image-height="407">
-                <p class="u-text u-text-12"> Summer is a unique and interesting character in the series. She usually has a separate story line from the others and she mainly interacts with Rick, as we can clearly see from the words “rick” and “grandpa”. <br>She also have a lot of words resembling the “family” semantic field, “dad”, “mom”, ”grandpa”. She interacts with all the Smiths pretty much at the same level, as we can also see in the characters interactions in time.<br>
+                <p class="u-text u-text-14"> Summer is a unique and interesting character in the series. She usually has a separate story line from the others and she mainly interacts with Rick, as we can clearly see from the words “rick” and “grandpa”. <br>She also have a lot of words resembling the “family” semantic field, “dad”, “mom”, ”grandpa”. She interacts with all the Smiths pretty much at the same level, as we can also see in the ​character’s interaction through time.<br>
                 </p>
                 <img class="u-image u-image-default u-image-4" src="images/Beth.png" alt="" data-image-width="673" data-image-height="402">
-                <p class="u-text u-text-13"> Beth is kind of a bridge between Rick and Jerry, mostly involved in adventures with her husband, usually with a bad outcome for their marriage. Thus, we can see that the main words for her are “jerry” and between the many we can also spot “dad” (that's Rick for her) and “morty”. <br>Interesting detail to notice, since she's a horse surgeon,&nbsp; we see “horse” as a very relevant word in the middle.&nbsp;<br>
+                <p class="u-text u-text-15"> Beth is kind of a bridge between Rick and Jerry, mostly involved in adventures with her husband, usually with a bad outcome for their marriage. Thus, we can see that the main words for her are “jerry”, and between the many we can also spot “dad” (that's Rick for her) and “morty”. <br>Interesting detail to notice, since she's a horse surgeon,&nbsp; we see “horse” as a very relevant word in the middle.&nbsp;<br>
                 </p>
                 <img class="u-image u-image-default u-image-5" src="images/Jerry.png" alt="" data-image-width="675" data-image-height="397">
-                <p class="u-text u-text-14">Jerry is like a Morty to the n-th power in terms of being worried, scared and indesive. He seems like probably the weakest and most doubtful person in all the universes.
-We can clearly see that most of his words are all related to doubt and unsureness: “oh”,”well”,”mm”,”uh”,”wait”... Knowing the character, it is very likely to have all of them in the same sentence! <br>As we said earlier, Beth is like a bridge between RIck and Jerry, in fact the main character called in by Jerry is “beth”.&nbsp;<br>
+                <p class="u-text u-text-16">Jerry is like a Morty to the n-th power in terms of being worried, scared and indecisive. He seems like probably the weakest and most doubtful person in all the universes.
+We can clearly see that most of his words are all related to doubt and unsureness: “oh”,”well”,”mm”,”uh”,”wait”... Knowing the character, it is very likely to have all of them in the same sentence! <br>As we said earlier, Beth is like a bridge between Rick and Jerry, in fact the main character called in by Jerry is “beth”.&nbsp;<br>
                 </p>
               </div>
             </div>
             <div class="u-container-style u-tab-pane u-tab-pane-8" id="tab-3a42" role="tabpanel" aria-labelledby="link-tab-3a42">
               <div class="u-container-layout u-container-layout-8">
-                <p class="u-text u-text-15">We have analyzed the sentiment of the main characters across the series, computing the good and bad points for every sentence and averaging the result over all the lines, for every character (VADER sentiment analysis technique). <br>The result will be a value between -1 (very bad sentiment) and 1 (very good).<br>
+                <p class="u-text u-text-17">We analyzed the sentiment of the main characters across the series, computing the sentiments for every sentence and averaging the result over all the lines, for every character (VADER sentiment analysis technique). <br>The result will be a value between -1 (very bad sentiment) and 1 (very good).<br>
                   <br>The result is quite flat. We can see below that almost all the characters have an average result close to 0, this means neutrality, but why?&nbsp;<br>
                 </p>
-                <img class="u-image u-image-default u-image-6" src="images/sentimentvalueepisodes-characters.png" alt="" data-image-width="1011" data-image-height="728">
-                <p class="u-text u-text-16"> We can observe that the characters have very high or very low sentiments usually, this is probably due to the way the cartoon is written: characters mostly communicate using catchphrases or short sentences full of good/bad sentiment. <br>Therefore, we choose to analyze the most used bi-grams and trigrams of the main characters.&nbsp;<br>
+                <img class="u-image u-image-default u-image-6" src="images/plots1.png" alt="" data-image-width="383" data-image-height="253">
+                <p class="u-text u-text-18"> We observe that the characters have very high or very low sentiments usually, this is probably due to the way the​ cartoon is written: Characters mostly communicate using catchphrases or short sentences full of good/bad sentiment. <br>Therefore, we choose to analyze the most used bi-grams and trigrams of the main characters.&nbsp;<br>
                 </p>
                 <img class="u-flip-horizontal u-image u-image-default u-image-7" src="images/58adf29ce612507e27bd3c35.png" alt="" data-image-width="1496" data-image-height="1346">
-                <p class="u-text u-text-17">ha ha ha<br>morty look like<br>ta ta ta<br>whoa whoa whoa<br>yeah yeah yeah
+                <p class="u-text u-text-19">ha ha ha<br>morty look like<br>ta ta ta<br>whoa whoa whoa<br>yeah yeah yeah
                 </p>
                 <img class="u-flip-horizontal u-image u-image-default u-image-8" src="images/58adf29ce612507e27bd3c35.png" alt="" data-image-width="1496" data-image-height="1346">
-                <p class="u-text u-text-18">look like<br>come​ morty<br>morty gonna<br>gonna go<br>right morty
+                <p class="u-text u-text-20">look like<br>come​ morty<br>morty gonna<br>gonna go<br>right morty
                 </p>
                 <img class="u-image u-image-default u-image-9" src="images/rick6.png" alt="" data-image-width="453" data-image-height="719">
                 <img class="u-image u-image-default u-image-10" src="images/58adf29ce612507e27bd3c35.png" alt="" data-image-width="1496" data-image-height="1346">
-                <p class="u-text u-text-19">oh man<br>w w<br>oh god<br>geez rick<br>oh geez&nbsp;
+                <p class="u-text u-text-21">oh man<br>w w<br>oh god<br>geez rick<br>oh geez&nbsp;
                 </p>
                 <img class="u-image u-image-default u-preserve-proportions u-image-11" src="images/rick-and-morty-30992.png" alt="" data-image-width="1024" data-image-height="1024">
                 <img class="u-image u-image-default u-image-12" src="images/58adf29ce612507e27bd3c35.png" alt="" data-image-width="1496" data-image-height="1346">
-                <p class="u-text u-text-20">
+                <p class="u-text u-text-22">
                   <span style="font-size: 0.875rem;">oh geez rick<br>oh man rick<br>w w​ w&nbsp;<br>rick w w&nbsp;<br>oh man oh<br>
                   </span>
                   <br>
                 </p>
                 <img class="u-image u-image-default u-image-13" src="images/58adf29ce612507e27bd3c35.png" alt="" data-image-width="1496" data-image-height="1346">
-                <p class="u-text u-text-21">oh god oh&nbsp;<br>god oh god<br>grandpa rick must<br>giant in​cest baby<br>oh god head
+                <p class="u-text u-text-23">oh god oh&nbsp;<br>god oh god<br>grandpa rick must<br>giant in​cest baby<br>oh god head
                 </p>
                 <img class="u-image u-image-default u-image-14" src="images/58adf29ce612507e27bd3c35.png" alt="" data-image-width="1496" data-image-height="1346">
-                <p class="u-text u-text-22">oh god<br>grandpa rick<br>frank palicky<br>today oh<br>like right 
+                <p class="u-text u-text-24">oh god<br>grandpa rick<br>frank palicky<br>today oh<br>like right 
                 </p>
                 <img class="u-image u-image-default u-image-15" src="images/summer1.png" alt="" data-image-width="139" data-image-height="512">
                 <img class="u-image u-image-default u-image-16" src="images/dciqk5d-1c7ba2ff-5eb1-444c-a3d6-0c88b6a78e40.png" alt="" data-image-width="700" data-image-height="1900">
                 <img class="u-image u-image-default u-image-17" src="images/58adf29ce612507e27bd3c35.png" alt="" data-image-width="1496" data-image-height="1346">
-                <p class="u-text u-text-23">
+                <p class="u-text u-text-25">
                   <span style="font-weight: 700; font-size: 0.875rem;"> mm mm<br>oh god<br>holy crap<br>hey wait<br>hungry apple
                   </span>
                   <br>
                 </p>
                 <img class="u-image u-image-default u-image-18" src="images/58adf29ce612507e27bd3c35.png" alt="" data-image-width="1496" data-image-height="1346">
-                <p class="u-text u-text-24">mm mm mm<br>let put dad<br>rip got milk<br>wait really yes<br>mm mm yeah
+                <p class="u-text u-text-26">mm mm mm<br>let put dad<br>rip got milk<br>wait really yes<br>mm mm yeah
                 </p>
                 <img class="u-flip-horizontal u-image u-image-default u-image-19" src="images/58adf29ce612507e27bd3c35.png" alt="" data-image-width="1496" data-image-height="1346">
                 <img class="u-flip-horizontal u-image u-image-default u-image-20" src="images/58adf29ce612507e27bd3c35.png" alt="" data-image-width="1496" data-image-height="1346">
-                <p class="u-text u-text-25">oh god<br>jerry jerry<br>go back<br>jerry want<br>god jerry 
+                <p class="u-text u-text-27">oh god<br>jerry jerry<br>go back<br>jerry want<br>god jerry 
                 </p>
                 <img class="u-image u-image-default u-image-21" src="images/Beth_Smith.png" alt="" data-image-width="144" data-image-height="512">
-                <p class="u-text u-text-26"> oh god jerry&nbsp;<br>morty getting sick<br>getting sick morty&nbsp;<br>sick morty lift<br>morty lift head
+                <p class="u-text u-text-28"> oh god jerry&nbsp;<br>morty getting sick<br>getting sick morty&nbsp;<br>sick morty lift<br>morty lift head
                 </p>
-                <p class="u-text u-text-27"> We can see that if we get these n-grams with the word clouds we can start to see the characters' behaviour. <br>We can have an idea of how Rick makes fun of everything from its trigrams or that he is a very dynamic character, always moving from one part of the adventure to the next one. <br>It’s interesting to notice that Summer has a crush on this “frank palicky” and it seems that he’s a recurring name for her! <br>Finally again from the display we have here we can clearly see the behaviour of Jerry, he is the personification of sadness and worriedness.&nbsp;<br>
+                <p class="u-text u-text-29"> We can see that if we get these n-grams with the word clouds we start to see the characters' behaviour. <br> We now get the idea of how Rick makes fun of everything from its trigrams or that he is a very dynamic character, always moving from one part of the adventure to the next one. <br>It’s interesting to notice that Summer has a crush on this “frank palicky” and it seems that he’s a recurring name for her! <br> Finally, from the bi- and trigrams above, we clearly see the behaviour of Jerry; he is the personification of sadness and worriedness.&nbsp;<br>
                 </p>
               </div>
             </div>
             <div class="u-container-style u-tab-pane u-tab-pane-9" id="link-tab-6219" role="tabpanel" aria-labelledby="tab-6219">
               <div class="u-container-layout u-container-layout-9">
-                <p class="u-text u-text-28"> In the following section, we have some videos (graphs) for you to watch! <br>
+                <p class="u-text u-text-30"> In the following section, we have some videos (graphs) for you to watch.<br>
                   <br>
                   <span style="font-weight: 700;">In Main Characters</span>, we follow the main characters of Rick &amp; Morty, namely Rick Morty, Beth, Summer and Jerry and their sentiment over time (episodes). Episodes are added chronologically, blue dots (characters) implies positive sentiment and red dots (characters) implies negative sentiment. Neutral sentiment is black.&nbsp;<br>
                   <br>
                   <span style="font-weight: 700;">In Most Talkative Characters</span>, we follow the most talkative characters of a Rick &amp; Morty episode and their sentiment over time (episodes). Episodes are added chronologically. Episodes are added chronologically, blue dots (characters) implies positive sentiment and red dots (characters) implies negative sentiment. Neutral sentiment is black.<br>
                 </p>
-                <h2 class="u-text u-text-palette-4-dark-2 u-text-29">Main Characters </h2>
+                <h2 class="u-text u-text-palette-4-dark-2 u-text-31">Main Characters </h2>
                 <div class="u-align-left u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-left-0 u-video u-video-contain u-video-6">
                   <div class="embed-responsive embed-responsive-6">
                     <iframe style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" class="embed-responsive-item" src="https://www.youtube.com/embed/t-CNFJFHUTw?mute=1&amp;showinfo=1&amp;controls=1&amp;start=0" frameborder="0" allowfullscreen=""></iframe>
                   </div>
                 </div>
-                <p class="u-text u-text-30"> In this video, we follow the main characters of Rick &amp; Morty, namely Rick Morty, Beth, Summer and Jerry and their sentiment over time (episodes). Episodes are added chronologically, blue dots (characters) implies positive sentiment and red dots (characters) implies negative sentiment. Neutral sentiment is black.</p>
-                <h2 class="u-text u-text-palette-4-dark-2 u-text-31">Most Talkative Characters</h2>
+                <p class="u-text u-text-32"> In this video, we follow the main characters of Rick &amp; Morty, namely Rick Morty, Beth, Summer and Jerry and their sentiment over time (episodes). Episodes are added chronologically, blue dots (characters) implies positive sentiment and red dots (characters) implies negative sentiment. Neutral sentiment is black.</p>
+                <h2 class="u-text u-text-palette-4-dark-2 u-text-33">Most Talkative Characters</h2>
                 <div class="u-align-left u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-left-0 u-video u-video-contain u-video-7">
                   <div class="embed-responsive embed-responsive-7">
                     <iframe style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" class="embed-responsive-item" src="https://www.youtube.com/embed/1F_fdveDsss?mute=1&amp;showinfo=1&amp;controls=1&amp;start=0" frameborder="0" allowfullscreen=""></iframe>
                   </div>
                 </div>
-                <p class="u-text u-text-32"> In this video, we follow the most talkative characters of a Rick &amp; Morty episode and their sentiment over time (episodes). Episodes are added chronologically, blue dots (characters) implies positive sentiment and red dots (characters) implies negative sentiment. Neutral sentiment is black.</p>
+                <p class="u-text u-text-34"> In this video, we follow the most talkative characters of a Rick &amp; Morty episode and their sentiment over time (episodes). Episodes are added chronologically, blue dots (characters) implies positive sentiment and red dots (characters) implies negative sentiment. Neutral sentiment is black.</p>
+                <p class="u-text u-text-palette-2-dark-1 u-text-35">SHOULD BE INTERACTIVE - HAVE TO EXPORT. WAITING FOR COMMENTS</p>
+                <img class="u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-preserve-proportions u-image-22" src="images/sentimentvalueepisodes-characters.png" alt="" data-image-width="1011" data-image-height="728">
               </div>
             </div>
             <div class="u-container-style u-tab-pane u-tab-pane-10" id="tab-081f" role="tabpanel" aria-labelledby="link-tab-081f">
               <div class="u-container-layout u-container-layout-10">
-                <p class="u-text u-text-default-xl u-text-33"> Rick and Morty is known to be a game changer in terms of cartoons, with an 8.5 average on IMDb is a very high rated animated series. <br>But why? The cartoon is full of swearing and bad behaviour of the characters, along with very good endings or positive characters, usually the bad jokes and trash talking. It's what we like in these types of cartoons, then the question arises, can we have a proof of what we like more? Good or bad behavior episodes? <br>
-                  <br>To answer the question we analyzed the sentiment of the single episodes along with it’s IMDb score and searched for any correlation.&nbsp;<br>
+                <p class="u-text u-text-default-xl u-text-36"> With an 8.5 average IMDB-rating, one of the most high-rated animated series, it’s easy to see how Rick and Morty became a game changer in the world of cartoons. <br>But why? ​The cartoon is full of swearing and bad behaviour, bad jokes and a lot of trash talk whilst episodes usually end positively or with a character being positive. ​But what do we, the viewers, actually like the most? Trash talk or positive endings?<br>To answer the question we analyzed the sentiment of the single episodes along with it’s IMDb score and searched for any correlation.&nbsp;<br>
                 </p>
-                <img class="u-image u-image-default u-image-22" src="images/normalizedratingsandsentiments.png" alt="" data-image-width="701" data-image-height="393">
-                <p class="u-text u-text-34">
+                <img class="u-image u-image-default u-preserve-proportions u-image-23" src="images/normalizedratingsandsentiments.png" alt="" data-image-width="701" data-image-height="393">
+                <p class="u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xs u-text u-text-37">
                   <span style="font-size: 0.875rem;">Here on this plot, the sentiment has been normalized on the average grade (8.5) and increased by a multiplicative factor of 4, so it aligns with the IMDB ratings and shows the relation between the two.</span>
                   <br>
                 </p>
-                <p class="u-text u-text-35"> We can see that the behaviour of sentiment and ratings is quite similar. We also evaluated that we have a Pearson correlation of 0.26 with a p-value of 0.3 (that means we have a 70 % of confidence that our correlation is not happening at random). This means that we have a small correlation between positive sentiment and good grades of episodes. <br>On the other hand one may argue that since the correlation is not very strong we, the audience in the C-137 universe, usually focus more on the plot, with a little bias towards good behavior episodes. As a human being of this universe I am glad that we might have enough objectivity to judge things especially with this little good-related bias. <br>
-                  <br>But if we display the values in a sentiment/rating plot we can see that there is a generic increasing pattern.&nbsp;<br>
+                <p class="u-text u-text-38"> We can see that the behaviour of sentiment and ratings is quite similar. We also evaluated that we have a Pearson correlation of 0.26 with a p-value of 0.3 (that means we have a 70 % of confidence that our correlation is not happening at random). This means that we have a small correlation between positive sentiment and good grades of episodes. <br>On the other hand one may argue that since the correlation is not very strong we, the audience in the C-137 universe, usually focus more on the plot, with a little bias towards good behavior episodes. As a human being of this universe I am glad that we might have enough objectivity to judge things especially with this little good-related bias. <br>
+                  <br>If we display the values in a sentiment/rating plot we can see that there is a generic increasing pattern.&nbsp;<br>
                 </p>
-                <img class="u-image u-image-default u-image-23" src="images/corrsentimentrating.png" alt="" data-image-width="736" data-image-height="338">
+                <img class="u-image u-image-default u-preserve-proportions u-image-24" src="images/corrsentimentrating.png" alt="" data-image-width="736" data-image-height="338">
               </div>
             </div>
           </div>
